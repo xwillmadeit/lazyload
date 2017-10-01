@@ -4,7 +4,7 @@ export default (selector = '.lazyload', options = {}) => {
     threshold: 0.1
   }
 
-  options = {...defaultOptions, ...options}
+  options = { ...defaultOptions, ...options }
 
   const { rootMargin, threshold, loaded } = options
 
@@ -29,7 +29,8 @@ export default (selector = '.lazyload', options = {}) => {
 
   return {
     observe() {
-      const elements = document.querySelectorAll(selector)
+      let elements = document.querySelectorAll(selector)
+      elements = Array.prototype.slice.call(elements)
       elements.forEach(element => {
         observer.observe(element)
       })

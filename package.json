@@ -2,10 +2,15 @@
   "name": "lazyload",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/lazyload.js",
   "scripts": {
     "build": "node build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwillmadeit/lazyload.git"
+  },
+  "homepage": "https://github.com/xwillmadeit/lazyload#readme",
   "keywords": [],
   "author": "xwillmadeit <xwillmadeit@gmail.com>",
   "license": "MIT",
